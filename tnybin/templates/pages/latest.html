@@ -23,9 +23,10 @@
 <ul class="latest">
   % for paste in pastes:
   <% 
-    link = '{0}/{1}'.format(paste['lang'], paste['uid'])
+    ext = map_lang(paste['lang'])
+    link = '{0}/{1}'.format(ext, paste['uid'])
     date = datetimeformat(paste['date'])
   %>
-  <li><a class="uid" href="/{{ link }}">{{ paste['lang'] }}/{{ paste['uid'] }}</a> <span class="date">{{ date }}</span></li>
+  <li><a class="uid" href="/{{ link }}">{{ ext }}/{{ paste['uid'] }}</a> <span class="date">{{ date }}</span></li>
   % end
 </ul>

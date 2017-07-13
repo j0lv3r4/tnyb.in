@@ -1,0 +1,65 @@
+.highlighttable .hll { background-color: #dfe1e8 }
+.highlighttable  { background: #eff1f5; color: #2b303b }
+.highlighttable .c { color: #a7adba } /* Comment */
+.highlighttable .err { color: #bf616a } /* Error */
+.highlighttable .k { color: #b48ead } /* Keyword */
+.highlighttable .l { color: #d08770 } /* Literal */
+.highlighttable .n { color: #2b303b } /* Name */
+.highlighttable .o { color: #96b5b4 } /* Operator */
+.highlighttable .p { color: #2b303b } /* Punctuation */
+.highlighttable .cm { color: #a7adba } /* Comment.Multiline */
+.highlighttable .cp { color: #a7adba } /* Comment.Preproc */
+.highlighttable .c1 { color: #a7adba } /* Comment.Single */
+.highlighttable .cs { color: #a7adba } /* Comment.Special */
+.highlighttable .gd { color: #bf616a } /* Generic.Deleted */
+.highlighttable .ge { font-style: italic } /* Generic.Emph */
+.highlighttable .gh { color: #2b303b; font-weight: bold } /* Generic.Heading */
+.highlighttable .gi { color: #a3be8c } /* Generic.Inserted */
+.highlighttable .gp { color: #a7adba; font-weight: bold } /* Generic.Prompt */
+.highlighttable .gs { font-weight: bold } /* Generic.Strong */
+.highlighttable .gu { color: #96b5b4; font-weight: bold } /* Generic.Subheading */
+.highlighttable .kc { color: #b48ead } /* Keyword.Constant */
+.highlighttable .kd { color: #b48ead } /* Keyword.Declaration */
+.highlighttable .kn { color: #96b5b4 } /* Keyword.Namespace */
+.highlighttable .kp { color: #b48ead } /* Keyword.Pseudo */
+.highlighttable .kr { color: #b48ead } /* Keyword.Reserved */
+.highlighttable .kt { color: #ebcb8b } /* Keyword.Type */
+.highlighttable .ld { color: #a3be8c } /* Literal.Date */
+.highlighttable .m { color: #d08770 } /* Literal.Number */
+.highlighttable .s { color: #a3be8c } /* Literal.String */
+.highlighttable .na { color: #8fa1b3 } /* Name.Attribute */
+.highlighttable .nb { color: #2b303b } /* Name.Builtin */
+.highlighttable .nc { color: #ebcb8b } /* Name.Class */
+.highlighttable .no { color: #bf616a } /* Name.Constant */
+.highlighttable .nd { color: #96b5b4 } /* Name.Decorator */
+.highlighttable .ni { color: #2b303b } /* Name.Entity */
+.highlighttable .ne { color: #bf616a } /* Name.Exception */
+.highlighttable .nf { color: #8fa1b3 } /* Name.Function */
+.highlighttable .nl { color: #2b303b } /* Name.Label */
+.highlighttable .nn { color: #ebcb8b } /* Name.Namespace */
+.highlighttable .nx { color: #8fa1b3 } /* Name.Other */
+.highlighttable .py { color: #2b303b } /* Name.Property */
+.highlighttable .nt { color: #96b5b4 } /* Name.Tag */
+.highlighttable .nv { color: #bf616a } /* Name.Variable */
+.highlighttable .ow { color: #96b5b4 } /* Operator.Word */
+.highlighttable .w { color: #2b303b } /* Text.Whitespace */
+.highlighttable .mf { color: #d08770 } /* Literal.Number.Float */
+.highlighttable .mh { color: #d08770 } /* Literal.Number.Hex */
+.highlighttable .mi { color: #d08770 } /* Literal.Number.Integer */
+.highlighttable .mo { color: #d08770 } /* Literal.Number.Oct */
+.highlighttable .sb { color: #a3be8c } /* Literal.String.Backtick */
+.highlighttable .sc { color: #2b303b } /* Literal.String.Char */
+.highlighttable .sd { color: #a7adba } /* Literal.String.Doc */
+.highlighttable .s2 { color: #a3be8c } /* Literal.String.Double */
+.highlighttable .se { color: #d08770 } /* Literal.String.Escape */
+.highlighttable .sh { color: #a3be8c } /* Literal.String.Heredoc */
+.highlighttable .si { color: #d08770 } /* Literal.String.Interpol */
+.highlighttable .sx { color: #a3be8c } /* Literal.String.Other */
+.highlighttable .sr { color: #a3be8c } /* Literal.String.Regex */
+.highlighttable .s1 { color: #a3be8c } /* Literal.String.Single */
+.highlighttable .ss { color: #a3be8c } /* Literal.String.Symbol */
+.highlighttable .bp { color: #2b303b } /* Name.Builtin.Pseudo */
+.highlighttable .vc { color: #bf616a } /* Name.Variable.Class */
+.highlighttable .vg { color: #bf616a } /* Name.Variable.Global */
+.highlighttable .vi { color: #bf616a } /* Name.Variable.Instance */
+.highlighttable .il { color: #d08770 } /* Literal.Number.Integer.Long */

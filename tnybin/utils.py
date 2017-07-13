@@ -3,8 +3,10 @@ import arrow
 
 
 LANGS = {
+    'text': 'txt',
     'python': 'py',
-    'javascript': 'js'
+    'javascript': 'js',
+    'ruby': 'rb',
 }
 
 

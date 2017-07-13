@@ -33,8 +33,12 @@ body {
 }
 
 .container {
-  max-width: 25em;
+  max-width: 35em;
   margin: 0 auto;
+}
+
+.CodeMirror {
+  height: 450px;
 }
 
 .CodeMirror,
@@ -43,10 +47,17 @@ body {
   width: 100%;
   margin: 2em auto;
   border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .highlighttable {
+  display: block;
   min-height: 17em;
+  overflow-x: scroll;
+}
+
+.highlighttable pre {
+  overflow: auto;
 }
 
 .highlighttable .linenos,
@@ -62,3 +73,4 @@ code {
   font-family: 'fira-mono-regular', monospace;
   font-size: 14px;
 }
+

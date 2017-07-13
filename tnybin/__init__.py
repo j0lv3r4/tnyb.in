@@ -58,7 +58,9 @@ def show_single(ext, uid):
         return error404('Paste not found :(')
 
     lexer = get_lexer_by_name(lang, stripall=True)
-    formatter = HtmlFormatter(linenos=True)
+    formatter = HtmlFormatter(
+        linenos=True,
+    )
     result = highlight(paste['code'], lexer, formatter)
 
     return template(
@@ -74,8 +76,15 @@ def show_single(ext, uid):
 @get('/latest')
 def show_latest():
     """Show latest 20 pastes"""
+
     results = pastes.find(_limit=20)
-    return template('pages/latest.html', pastes=results, datetimeformat=datetimeformat)
+
+    return template(
+        'pages/latest.html',
+        pastes=results,
+        datetimeformat=datetimeformat,
+        map_lang=map_lang,
+    )
 
 
 # Error pages
