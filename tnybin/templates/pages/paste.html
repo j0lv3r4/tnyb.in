@@ -1,0 +1,12 @@
+% rebase('layouts/default.html')
+
+<% created = datetimeformat(date) %>
+
+<div>
+  <h3 class="paste-uid">
+    {{ uid }}
+  </h3>
+
+  <p class="paste-date"><em>{{ created }}</em></p>
+{{ !code }}
+</div>

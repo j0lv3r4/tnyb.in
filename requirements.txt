@@ -1,0 +1,15 @@
+alembic==0.9.3
+arrow==0.10.0
+bottle==0.12.13
+chardet==3.0.4
+dataset==0.8.0
+hashids==1.2.0
+Mako==1.0.6
+MarkupSafe==1.0
+normality==0.4.4
+Pygments==2.2.0
+python-dateutil==2.6.1
+python-editor==1.0.3
+PyYAML==3.12
+six==1.10.0
+SQLAlchemy==1.1.11

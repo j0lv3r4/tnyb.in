@@ -1,0 +1,15 @@
+% rebase('layouts/default.html')
+
+<form action="/" method="post">
+  <select id="lang-select" name="lang">
+    <option value="markdown">Markdown</option>
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+  </select>
+
+  <textarea id="code" name="code"></textarea>
+  <button type="submit">Create</button>
+</form>
+
+% include('includes/scripts.html')
+<script src="/static/js/home.js"></script>

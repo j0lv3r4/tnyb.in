@@ -1,0 +1,31 @@
+% rebase('layouts/default.html')
+<style>
+.uid {
+  font-family: 'fira-mono-regular';
+}
+
+.date {
+  float: right;
+}
+
+.latest {
+  margin-left: 1em;
+  padding-left: 0;
+}
+
+.latest li {
+  margin-bottom: .5em;
+}
+</style>
+
+<h3>Latest 20 pastes</h3>
+
+<ul class="latest">
+  % for paste in pastes:
+  <% 
+    link = '{0}/{1}'.format(paste['lang'], paste['uid'])
+    date = datetimeformat(paste['date'])
+  %>
+  <li><a class="uid" href="/{{ link }}">{{ paste['lang'] }}/{{ paste['uid'] }}</a> <span class="date">{{ date }}</span></li>
+  % end
+</ul>

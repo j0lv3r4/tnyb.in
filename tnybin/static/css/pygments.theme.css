@@ -1,0 +1,75 @@
+/*
+
+    Name:       Base16 Default Light
+    Author:     Chris Kempson (http://chriskempson.com)
+
+    Pygments template by Jan T. Sott (https://github.com/idleberg)
+    Created with Base16 Builder by Chris Kempson (https://github.com/chriskempson/base16-builder)
+
+*/
+.highlighttable .linenos { color: #b0b0b0; }
+.highlighttable .hll { background-color: #e0e0e0 }
+.highlighttable  { background: #f5f5f5; color: #151515 }
+.highlighttable .c { color: #b0b0b0 } /* Comment */
+.highlighttable .err { color: #ac4142 } /* Error */
+.highlighttable .k { color: #aa759f } /* Keyword */
+.highlighttable .l { color: #d28445 } /* Literal */
+.highlighttable .n { color: #151515 } /* Name */
+.highlighttable .o { color: #75b5aa } /* Operator */
+.highlighttable .p { color: #151515 } /* Punctuation */
+.highlighttable .cm { color: #b0b0b0 } /* Comment.Multiline */
+.highlighttable .cp { color: #b0b0b0 } /* Comment.Preproc */
+.highlighttable .c1 { color: #b0b0b0 } /* Comment.Single */
+.highlighttable .cs { color: #b0b0b0 } /* Comment.Special */
+.highlighttable .gd { color: #ac4142 } /* Generic.Deleted */
+.highlighttable .ge { font-style: italic } /* Generic.Emph */
+.highlighttable .gh { color: #151515; font-weight: bold } /* Generic.Heading */
+.highlighttable .gi { color: #90a959 } /* Generic.Inserted */
+.highlighttable .gp { color: #b0b0b0; font-weight: bold } /* Generic.Prompt */
+.highlighttable .gs { font-weight: bold } /* Generic.Strong */
+.highlighttable .gu { color: #75b5aa; font-weight: bold } /* Generic.Subheading */
+.highlighttable .kc { color: #aa759f } /* Keyword.Constant */
+.highlighttable .kd { color: #aa759f } /* Keyword.Declaration */
+.highlighttable .kn { color: #75b5aa } /* Keyword.Namespace */
+.highlighttable .kp { color: #aa759f } /* Keyword.Pseudo */
+.highlighttable .kr { color: #aa759f } /* Keyword.Reserved */
+.highlighttable .kt { color: #f4bf75 } /* Keyword.Type */
+.highlighttable .ld { color: #90a959 } /* Literal.Date */
+.highlighttable .m { color: #d28445 } /* Literal.Number */
+.highlighttable .s { color: #90a959 } /* Literal.String */
+.highlighttable .na { color: #6a9fb5 } /* Name.Attribute */
+.highlighttable .nb { color: #151515 } /* Name.Builtin */
+.highlighttable .nc { color: #f4bf75 } /* Name.Class */
+.highlighttable .no { color: #ac4142 } /* Name.Constant */
+.highlighttable .nd { color: #75b5aa } /* Name.Decorator */
+.highlighttable .ni { color: #151515 } /* Name.Entity */
+.highlighttable .ne { color: #ac4142 } /* Name.Exception */
+.highlighttable .nf { color: #6a9fb5 } /* Name.Function */
+.highlighttable .nl { color: #151515 } /* Name.Label */
+.highlighttable .nn { color: #f4bf75 } /* Name.Namespace */
+.highlighttable .nx { color: #6a9fb5 } /* Name.Other */
+.highlighttable .py { color: #151515 } /* Name.Property */
+.highlighttable .nt { color: #75b5aa } /* Name.Tag */
+.highlighttable .nv { color: #ac4142 } /* Name.Variable */
+.highlighttable .ow { color: #75b5aa } /* Operator.Word */
+.highlighttable .w { color: #151515 } /* Text.Whitespace */
+.highlighttable .mf { color: #d28445 } /* Literal.Number.Float */
+.highlighttable .mh { color: #d28445 } /* Literal.Number.Hex */
+.highlighttable .mi { color: #d28445 } /* Literal.Number.Integer */
+.highlighttable .mo { color: #d28445 } /* Literal.Number.Oct */
+.highlighttable .sb { color: #90a959 } /* Literal.String.Backtick */
+.highlighttable .sc { color: #151515 } /* Literal.String.Char */
+.highlighttable .sd { color: #b0b0b0 } /* Literal.String.Doc */
+.highlighttable .s2 { color: #90a959 } /* Literal.String.Double */
+.highlighttable .se { color: #d28445 } /* Literal.String.Escape */
+.highlighttable .sh { color: #90a959 } /* Literal.String.Heredoc */
+.highlighttable .si { color: #d28445 } /* Literal.String.Interpol */
+.highlighttable .sx { color: #90a959 } /* Literal.String.Other */
+.highlighttable .sr { color: #90a959 } /* Literal.String.Regex */
+.highlighttable .s1 { color: #90a959 } /* Literal.String.Single */
+.highlighttable .ss { color: #90a959 } /* Literal.String.Symbol */
+.highlighttable .bp { color: #151515 } /* Name.Builtin.Pseudo */
+.highlighttable .vc { color: #ac4142 } /* Name.Variable.Class */
+.highlighttable .vg { color: #ac4142 } /* Name.Variable.Global */
+.highlighttable .vi { color: #ac4142 } /* Name.Variable.Instance */
+.highlighttable .il { color: #d28445 } /* Literal.Number.Integer.Long */

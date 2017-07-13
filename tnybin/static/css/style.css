@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'fira-mono-regular';
+  src: url('/static/fonts/FiraMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'fira-mono-medium';
+  src: url('/static/fonts/FiraMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'fira-mono-bold';
+  src: url('/static/fonts/FiraMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'fira-sans-regular';
+  src: url('/static/fonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'fira-sans-medium';
+  src: url('/static/fonts/FiraSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'fira-sans-bold';
+  src: url('/static/fonts/FiraSans-Bold.ttf');
+}
+
+body {
+  font-family: 'fira-sans-regular';
+}
+
+.container {
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+.CodeMirror,
+.highlighttable,
+#code {
+  width: 100%;
+  margin: 2em auto;
+  border: 1px solid #ccc;
+}
+
+.highlighttable {
+  min-height: 17em;
+}
+
+.highlighttable .linenos,
+.highlighttable .code {
+  vertical-align: baseline;
+}
+
+.linenos,
+.code,
+.CodeMirror,
+pre,
+code {
+  font-family: 'fira-mono-regular', monospace;
+  font-size: 14px;
+}
