@@ -3,7 +3,7 @@ import arrow
 
 
 LANGS = {
-    'text': 'txt',
+    'markdown': 'md',
     'python': 'py',
     'javascript': 'js',
     'ruby': 'rb',
@@ -21,7 +21,7 @@ def map_ext(ext):
 
 
 def gen_uid(num, name=''):
-    hashids = Hashids(salt='some salt', min_length=6)
+    hashids = Hashids(salt='some salt', min_length=5)
     return hashids.encrypt(num + 1)
 
 

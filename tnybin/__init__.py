@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 import dataset
+import mistune
 from pygments import highlight
 from pygments import formatters 
 from pygments.lexers import get_lexer_by_name
@@ -13,6 +14,7 @@ PROJECT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_PATH.insert(0, '{0}/templates'.format(PROJECT_PATH))
 
 # database setup
+
 db = dataset.connect('sqlite:///tnybin.sqlite')
 pastes = db['pastes']
 
@@ -57,11 +59,16 @@ def show_single(ext, uid):
     if lang != map_ext(ext):
         return error404('Paste not found :(')
 
-    lexer = get_lexer_by_name(lang, stripall=True)
-    formatter = HtmlFormatter(
-        linenos=True,
-    )
-    result = highlight(paste['code'], lexer, formatter)
+    result = ''
+
+    if lang == 'markdown':
+        result = mistune.markdown(paste['code'], escape=True)
+    else:
+        lexer = get_lexer_by_name(lang, stripall=True)
+        formatter = HtmlFormatter(
+            linenos=True,
+        )
+        result = highlight(paste['code'], lexer, formatter)
 
     return template(
         'pages/paste.html',
@@ -101,4 +108,4 @@ def error500(err):
     return template('pages/500.html', error=err)
 
 
-run(debug=True, reloader=True, port=1234)
+run(debug=True, reloader=True, port=2345)

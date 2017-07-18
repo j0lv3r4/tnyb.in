@@ -3,10 +3,8 @@
 <% created = datetimeformat(date) %>
 
 <div>
-  <h3 class="paste-uid">
-    {{ uid }}
-  </h3>
-
-  <p class="paste-date"><em>{{ created }}</em></p>
+  <h3 class="paste-uid">{{ uid }}</h3>
+  
+  <p>Created <span class="paste-date"><em>{{ created }}</em></span></p>
 {{ !code }}
 </div>

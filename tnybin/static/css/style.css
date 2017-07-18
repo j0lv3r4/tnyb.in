@@ -1,3 +1,13 @@
+/* Base */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: 'fira-mono-regular';
   src: url('/static/fonts/FiraMono-Regular.ttf');
@@ -32,10 +42,28 @@ body {
   font-family: 'fira-sans-regular';
 }
 
+/* Layout */
+
 .container {
   max-width: 35em;
   margin: 0 auto;
 }
+
+/* Form */
+
+.paste-title {
+  margin-top: 1em;
+  display: block;
+  width: 100%;
+  padding: .3em .5em;
+  color: #555;
+  font-family: 'fira-sans-regular', sans-serif;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #F4F3F3;
+}
+
+/* Editor & highlighted result */
 
 .CodeMirror {
   height: 450px;
@@ -53,7 +81,7 @@ body {
 .highlighttable {
   display: block;
   min-height: 17em;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .highlighttable pre {

@@ -8,6 +8,7 @@
     {
       lineNumbers: true,
       lineWrapping: true,
+      indentUnit: 4,
       matchBrackets:true,
       theme: 'base16-light'
     });
@@ -19,12 +20,20 @@
   CodeMirror.autoLoadMode(editor, langOnLoad);
   editor.setOption('mode', langOnLoad);
 
+  // check if language is saved on localStorage
+  var langOpt = localStorage.getItem('tnybin-lang') || 'markdown';
+  selectEl.value = langOpt;
+
+  // add listener to language select tag
   selectEl.addEventListener('change', function(event) {
     var lang = event.target.value;
 
     if (lang) {
       CodeMirror.autoLoadMode(editor, lang);
       editor.setOption('mode', lang);
+
+      // save selected option on localStorage
+      localStorage.setItem('tnybin-lang', lang);
     }
   });
 })();
