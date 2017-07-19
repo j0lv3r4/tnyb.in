@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 from datetime import datetime
 import dataset
@@ -6,33 +7,35 @@ from pygments import highlight
 from pygments import formatters 
 from pygments.lexers import get_lexer_by_name
 from pygments.formatters import HtmlFormatter
-from bottle import route, error, response, request, redirect, post, get, run, template, TEMPLATE_PATH, static_file
+from bottle import Bottle, route, error, response, request, redirect, post, get, run, template, TEMPLATE_PATH, static_file
 from utils import map_lang, gen_uid, map_ext, datetimeformat
+from config import DATABASE_URI
 
+app = Bottle()
 
 PROJECT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_PATH.insert(0, '{0}/templates'.format(PROJECT_PATH))
 
 # database setup
 
-db = dataset.connect('sqlite:///tnybin.sqlite')
+db = dataset.connect(DATABASE_URI)
 pastes = db['pastes']
 
 
 # static files
-@get('/static/<filename:path>')
+@app.get('/static/<filename:path>')
 def static_files(filename):
     """Serve static files"""
     return static_file(filename, root='{0}/static/'.format(PROJECT_PATH))
 
 
-@get('/')
+@app.get('/')
 def home():
     """Home page"""
-    return template('pages/home.html')
+    return template('home.html')
 
 
-@post('/')
+@app.post('/')
 def create_paste():
     """Create a paste"""
     data = request.forms
@@ -50,7 +53,7 @@ def create_paste():
     return redirect('/{0}/{1}'.format(map_lang(lang), uid))
 
 
-@get('/<ext>/<uid>')
+@app.get('/<ext>/<uid>')
 def show_single(ext, uid):
     """Show a paste"""
     paste = pastes.find_one(uid=uid)
@@ -65,13 +68,11 @@ def show_single(ext, uid):
         result = mistune.markdown(paste['code'], escape=True)
     else:
         lexer = get_lexer_by_name(lang, stripall=True)
-        formatter = HtmlFormatter(
-            linenos=True,
-        )
+        formatter = HtmlFormatter(linenos=True)
         result = highlight(paste['code'], lexer, formatter)
 
     return template(
-        'pages/paste.html',
+        'paste.html',
         code=result,
         uid=paste['uid'],
         date=paste['date'],
@@ -80,14 +81,14 @@ def show_single(ext, uid):
     )
 
 
-@get('/latest')
+@app.get('/latest')
 def show_latest():
     """Show latest 20 pastes"""
 
     results = pastes.find(_limit=20)
 
     return template(
-        'pages/latest.html',
+        'latest.html',
         pastes=results,
         datetimeformat=datetimeformat,
         map_lang=map_lang,
@@ -96,16 +97,13 @@ def show_latest():
 
 # Error pages
 
-@error(404)
+@app.error(404)
 def error404(err):
     """Page not found"""
-    return template('pages/404.html', error=err)
+    return template('404.html', error=err)
 
 
-@error(500)
+@app.error(500)
 def error500(err):
     """Server error"""
-    return template('pages/500.html', error=err)
-
-
-run(debug=True, reloader=True, port=2345)
+    return template('500.html', error=err)
