@@ -9,3 +9,6 @@ mistune = "*"
 pygments = "*"
 hashids = "*"
 arrow = "*"
+
+[dev-packages]
+pylint = "*"

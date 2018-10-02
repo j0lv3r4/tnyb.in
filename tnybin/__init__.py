@@ -8,7 +8,7 @@ from pygments import formatters
 from pygments.lexers import get_lexer_by_name
 from pygments.formatters import HtmlFormatter
 from bottle import Bottle, route, error, response, request, redirect, post, get, run, template, TEMPLATE_PATH, static_file
-from utils import map_lang, gen_uid, map_ext, datetimeformat
+from tnybin.utils import map_lang, gen_uid, map_ext, datetimeformat
 from config import DATABASE_URI
 
 app = Bottle()
@@ -85,7 +85,7 @@ def show_single(ext, uid):
 def show_latest():
     """Show latest 20 pastes"""
 
-    results = pastes.find(_limit=20)
+    results = pastes.find(_limit=20, order_by="-date")
 
     return template(
         'latest.html',

@@ -1,11 +1,24 @@
 % rebase('layouts/default.html')
 
+   <!-- 'markdown': 'md',
+    'python': 'py',
+    'javascript': 'js',
+    'ruby': 'rb',
+    'css': 'css',
+    'sass': 'sass',
+    'scss': 'scss',
+    'lua': 'lua',
+    'html': 'html', -->
 <form action="/" method="post">
   <select id="lang-select" name="lang">
-    <option value="markdown">Markdown</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
     <option value="javascript">JavaScript</option>
     <option value="python">Python</option>
-    <option value="ruby">Ruby</option>
+    <option value="sass">Sass</option>
+    <option value="scss">SCSS</option>
+    <option value="lua">Lua</option>
+    <option value="markdown">Markdown</option>
   </select>
 
   <textarea id="code" name="code"></textarea>

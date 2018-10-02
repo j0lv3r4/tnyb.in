@@ -21,7 +21,7 @@
   editor.setOption('mode', langOnLoad);
 
   // check if language is saved on localStorage
-  var langOpt = localStorage.getItem('tnybin-lang') || 'markdown';
+  var langOpt = localStorage.getItem('tnybin-lang') || 'html';
   selectEl.value = langOpt;
 
   // add listener to language select tag

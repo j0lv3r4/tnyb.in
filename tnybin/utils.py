@@ -7,6 +7,11 @@ LANGS = {
     'python': 'py',
     'javascript': 'js',
     'ruby': 'rb',
+    'css': 'css',
+    'sass': 'sass',
+    'scss': 'scss',
+    'lua': 'lua',
+    'html': 'html',
 }
 
 
@@ -15,7 +20,7 @@ def map_lang(lang):
 
 
 def map_ext(ext):
-    for lang, extension in LANGS.iteritems():
+    for lang, extension in LANGS.items():
         if extension == ext:
             return lang
 
