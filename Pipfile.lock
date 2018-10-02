@@ -1,0 +1,62 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "dc58228a565c1baf9f36176783b2c5ec1b4ff8061ba3d0c4813af0804529f293"
+        },
+        "requires": {},
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "alembic": {
+            "version": "==0.9.5"
+        },
+        "arrow": {
+            "version": "==0.10.0"
+        },
+        "bottle": {
+            "version": "==0.12.13"
+        },
+        "chardet": {
+            "version": "==3.0.4"
+        },
+        "dataset": {
+            "version": "==1.0.1"
+        },
+        "hashids": {
+            "version": "==1.2.0"
+        },
+        "mako": {
+            "version": "==1.0.7"
+        },
+        "markupsafe": {
+            "version": "==1.0"
+        },
+        "mistune": {
+            "version": "==0.7.4"
+        },
+        "normality": {
+            "version": "==0.4.4"
+        },
+        "pygments": {
+            "version": "==2.2.0"
+        },
+        "python-dateutil": {
+            "version": "==2.6.1"
+        },
+        "python-editor": {
+            "version": "==1.0.3"
+        },
+        "six": {
+            "version": "==1.11.0"
+        },
+        "sqlalchemy": {
+            "version": "==1.1.14"
+        }
+    },
+    "develop": {}
+}

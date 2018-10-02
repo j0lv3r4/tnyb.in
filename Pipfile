@@ -1,3 +1,11 @@
 [[source]]
 url = "https://pypi.python.org/simple"
 verify_ssl = true
+
+[packages]
+bottle = "*"
+dataset = "*"
+mistune = "*"
+pygments = "*"
+hashids = "*"
+arrow = "*"
